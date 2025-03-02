@@ -1,0 +1,166 @@
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #edd3ff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #652065;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #f7a437;
+}
+
+/* Navbar */
+#navbar {
+  padding: 1.5rem 2.5rem;
+  border-bottom: 2px dotted #652065;
+  background-color: #f2ebff;
+}
+/*rem relativo*/
+#navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* conteúdo principal */
+.container {
+  display: flex;
+  padding: 2rem 2.5rem;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#posts-container {
+  flex: 3 1 0;
+}
+
+.post {
+  margin-bottom: 2.5rem;
+  border-radius: 5%;
+  border: 1px dotted #652065;
+  background-color: #f2ebff;
+  size: flex;
+}
+
+.post img {
+  width: 100%;
+  background-color: #fff;
+}
+
+.title,
+.description,
+.author,
+#mo_im_am,
+.description,
+.about {
+  margin: 1.5rem;
+}
+
+.subtitle {
+font-size: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.author {
+  color: #333;
+  font-weight: bold;
+}
+
+/* barra lateral */
+#sidebar {
+  flex: 1 1 0;
+}
+
+#search-bar,
+#categories,
+#tags {
+  padding: 1.5rem;
+  border: 1px dotted #652065;
+  margin-bottom: 1rem;
+  background-color: #f2ebff;
+  border-radius: 5%;
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+#search-bar form {
+  display: flex;
+}
+
+#search-bar input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #652065;
+}
+
+#search-bar input[type="submit"] {
+  cursor: pointer;
+  background-color: #652065;
+  color: #fff;
+  border: none;
+}
+
+#categories li {
+  margin-bottom: 1rem;
+}
+
+#tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#tags-container a {
+  background-color: #ffffff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+}
+
+/* Rodapé */
+#footer {
+  border-top: 2px dotted #652065;
+  padding: 3rem;
+  text-align: center;
+  background-color: #f2ebff;
+}
+
+#footer h2,
+#footer p {
+  margin-bottom: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 450px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}

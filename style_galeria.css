@@ -1,0 +1,94 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  body {
+    background-color: #edd3ff;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #652065;
+    transition: 0.4s;
+  }
+  a:hover {
+    color: #f7a437;
+  }
+  
+  /* Navbar */
+  #navbar {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px dotted #652065;
+    background-color: #f2ebff;
+  }
+
+  /*rem relativo*/
+  #navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  /* Main - container */
+  #container {
+    display: flex;
+    padding: 2rem 2.5rem;
+    gap: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #maps_galery {
+    flex: 3 1 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    border: 3px solid #652065;
+    background-color: #f2ebff;
+  }
+  h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 5rem;
+  }
+
+
+  /* Rodapé */
+  #footer {
+    border-top: 2px dotted #ddd;
+    padding: 3rem;
+    text-align: center;
+    background-color: #f2ebff;
+  }
+  
+  #footer h2,
+  #footer p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsivo */
+  /*coloca para telas até 450 que o conteudo dentro dessa classe possa ser
+  visto em varias linhas*/
+  @media (max-width: 450px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  }

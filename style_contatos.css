@@ -1,0 +1,135 @@
+/* Geral */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #edd3ff;
+}
+h3 {
+    margin-bottom: 5px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #652065;
+    transition: 0.4s;
+}
+a:hover {
+    color: #f7a437;
+}
+#container {
+    display: flex;
+    padding: 2rem 2.5rem;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+/* Navbar */
+#navbar {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px dotted #652065;
+    background-color: #f2ebff;
+}
+#navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+#nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* main - form */
+main {
+    flex: 1 0 0;
+    padding: 1.5rem;
+    border: 2px dotted #652065;
+    background-color: #f2ebff;
+}
+#content-form {
+    margin-left: 20px;
+    flex: 3 1 0;
+}
+#name, #e-mail, #feedback {
+    width: 95%;
+    margin: 5px;
+}
+#feedback {
+    height: 250px;
+    width: 95%;
+}
+#enviar {
+    border-radius: 65px;
+    border-color: #000;
+    border-style: solid;
+    background-color: #851085;
+    color: #fff;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#enviar:hover {
+    border-color: #000;
+    background-color: #652065;
+    color: #ddd;
+    cursor: pointer;
+    scale: 2rem;
+}
+#enviar:active {
+    border-color: #000;
+    background-color: #000000;
+    color: #ddd;
+}
+
+  /* Section */
+#contatos {
+    flex: 1 0 0;
+    padding: 1.5rem;
+    border: 2px dotted #652065;
+    background-color: #f2ebff;
+}
+.contact {
+    font-style: italic;
+    padding: 1.5rem;
+}
+#contatos_icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 0 0 2.5rem;
+}
+img {
+    width: 40px;
+    height: auto;
+}
+
+  /* Rodapé */
+  #footer {
+    border-top: 2px dotted #652065;
+    padding: 3rem;
+    text-align: center;
+    background-color: #f2ebff;
+}
+  
+  #footer h2,
+  #footer p {
+    margin-bottom: 1rem;
+}
+  
+  /* Responsivo */
+  @media (max-width: 450px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+  
